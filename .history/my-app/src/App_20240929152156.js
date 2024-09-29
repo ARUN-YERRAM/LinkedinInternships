@@ -16,7 +16,7 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch(fetchCategories());  // Fetching categories initially
+    dispatch(fetchCategories());  // Fetch categories initially
   }, [dispatch]);
 
   useEffect(() => {
@@ -53,5 +53,5 @@ export default App;
 Limitations:
 1. Products are loaded in batches, so users might experience a slight delay while scrolling through all products.
 2. The app does not handle edge cases for no results found on search queries.
-3. The current implementation doesn't handle any advanced caching for Redux store, so the same API call will be happening on every category change.
+3. The current implementation doesn't handle any advanced caching for Redux store, so the same API call will happen on every category change.
 */
